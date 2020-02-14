@@ -31,7 +31,7 @@ class DataManager {
 // MARK: - DataManagerProtocol
 extension DataManager: DataManagerProtocol {
     func fetchTodoList(includingCompleted: Bool = false) -> [Todo] {
-        includingCompleted ? todos.filter { !$0.isCompleted } : todos
+        includingCompleted ? todos : todos.filter { !$0.isCompleted }
     }
     
     func addTodo(title: String) {
