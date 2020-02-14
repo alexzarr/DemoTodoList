@@ -18,6 +18,7 @@
 		AC2597E823E4850900CC57C6 /* TodoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2597E723E4850900CC57C6 /* TodoListViewModel.swift */; };
 		AC25981723E4CB4800CC57C6 /* TodoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC25981623E4CB4800CC57C6 /* TodoListView.swift */; };
 		AC25982423E511DE00CC57C6 /* MockDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC25982323E511DE00CC57C6 /* MockDataManager.swift */; };
+		AC32CB4A23F4A1F000E92696 /* TodoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC32CB4923F4A1F000E92696 /* TodoRow.swift */; };
 		AC9F2D3B23E9E08600E96DD1 /* NewTodoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9F2D3A23E9E08600E96DD1 /* NewTodoViewModel.swift */; };
 		AC9F2D3E23E9F87800E96DD1 /* NewTodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9F2D3D23E9F87800E96DD1 /* NewTodoView.swift */; };
 		ACC4FED923EB2F9C00F0AF72 /* KeyboardResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC4FED823EB2F9C00F0AF72 /* KeyboardResponder.swift */; };
@@ -37,6 +38,7 @@
 		AC2597E723E4850900CC57C6 /* TodoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewModel.swift; sourceTree = "<group>"; };
 		AC25981623E4CB4800CC57C6 /* TodoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListView.swift; sourceTree = "<group>"; };
 		AC25982323E511DE00CC57C6 /* MockDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDataManager.swift; sourceTree = "<group>"; };
+		AC32CB4923F4A1F000E92696 /* TodoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoRow.swift; sourceTree = "<group>"; };
 		AC9F2D3A23E9E08600E96DD1 /* NewTodoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTodoViewModel.swift; sourceTree = "<group>"; };
 		AC9F2D3D23E9F87800E96DD1 /* NewTodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTodoView.swift; sourceTree = "<group>"; };
 		ACC4FED823EB2F9C00F0AF72 /* KeyboardResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardResponder.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 			children = (
 				AC25981623E4CB4800CC57C6 /* TodoListView.swift */,
 				AC2597E723E4850900CC57C6 /* TodoListViewModel.swift */,
+				AC32CB4923F4A1F000E92696 /* TodoRow.swift */,
 			);
 			path = "Todo List";
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@
 			files = (
 				AC25973A23E2016000CC57C6 /* AppDelegate.swift in Sources */,
 				AC2597E523E253A000CC57C6 /* DataManager.swift in Sources */,
+				AC32CB4A23F4A1F000E92696 /* TodoRow.swift in Sources */,
 				AC25973C23E2016000CC57C6 /* SceneDelegate.swift in Sources */,
 				ACC4FED923EB2F9C00F0AF72 /* KeyboardResponder.swift in Sources */,
 				AC9F2D3E23E9F87800E96DD1 /* NewTodoView.swift in Sources */,

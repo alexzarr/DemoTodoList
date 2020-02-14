@@ -19,7 +19,11 @@ protocol TodoListViewModelProtocol {
 
 final class TodoListViewModel: ObservableObject {
     @Published var todos = [Todo]()
-    @Published var showCompleted = false
+    @Published var showCompleted = false {
+        didSet {
+            fetchTodos()
+        }
+    }
     
     var dataManager: DataManagerProtocol
     
@@ -37,5 +41,6 @@ extension TodoListViewModel: TodoListViewModelProtocol {
     
     func toggleIsCompleted(for todo: Todo) {
         dataManager.toggleIsCompleted(for: todo)
+        fetchTodos()
     }
 }
