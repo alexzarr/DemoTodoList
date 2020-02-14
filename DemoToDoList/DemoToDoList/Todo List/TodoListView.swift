@@ -21,13 +21,25 @@ struct TodoListView: View {
         }
     }
     
+    private var showCompletedButton: some View {
+        Button(action: {
+            self.viewModel.showCompleted.toggle()
+        }) {
+            Image(systemName: self.viewModel.showCompleted ? "checkmark.circle.fill" : "checkmark.circle")
+        }
+    }
+    
     var body: some View {
         NavigationView {
             List(viewModel.todos) { todo in
-                Text(todo.title)
+                Button(action: {
+                    self.viewModel.toggleIsCompleted(for: todo)
+                }) {
+                    TodoRow(todo: todo)
+                }
             }
             .navigationBarTitle(Text("Todo List"))
-            .navigationBarItems(trailing: addNewButton)
+            .navigationBarItems(leading: showCompletedButton, trailing: addNewButton)
         }
         .sheet(isPresented: $isShowingAddNew, onDismiss: {
             self.viewModel.fetchTodos()
