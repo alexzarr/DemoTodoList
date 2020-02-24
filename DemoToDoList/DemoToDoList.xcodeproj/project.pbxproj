@@ -18,11 +18,27 @@
 		AC2597E823E4850900CC57C6 /* TodoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC2597E723E4850900CC57C6 /* TodoListViewModel.swift */; };
 		AC25981723E4CB4800CC57C6 /* TodoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC25981623E4CB4800CC57C6 /* TodoListView.swift */; };
 		AC25982423E511DE00CC57C6 /* MockDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC25982323E511DE00CC57C6 /* MockDataManager.swift */; };
+		AC2CF760240493EB001A14B2 /* DBHelper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC2CF75F240493EB001A14B2 /* DBHelper.framework */; };
+		AC2CF761240493EB001A14B2 /* DBHelper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC2CF75F240493EB001A14B2 /* DBHelper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AC32CB4A23F4A1F000E92696 /* TodoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC32CB4923F4A1F000E92696 /* TodoRow.swift */; };
 		AC9F2D3B23E9E08600E96DD1 /* NewTodoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9F2D3A23E9E08600E96DD1 /* NewTodoViewModel.swift */; };
 		AC9F2D3E23E9F87800E96DD1 /* NewTodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC9F2D3D23E9F87800E96DD1 /* NewTodoView.swift */; };
 		ACC4FED923EB2F9C00F0AF72 /* KeyboardResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC4FED823EB2F9C00F0AF72 /* KeyboardResponder.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AC2CF762240493EB001A14B2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AC2CF761240493EB001A14B2 /* DBHelper.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		AC25973623E2016000CC57C6 /* DemoToDoList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoToDoList.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,6 +54,7 @@
 		AC2597E723E4850900CC57C6 /* TodoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewModel.swift; sourceTree = "<group>"; };
 		AC25981623E4CB4800CC57C6 /* TodoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListView.swift; sourceTree = "<group>"; };
 		AC25982323E511DE00CC57C6 /* MockDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDataManager.swift; sourceTree = "<group>"; };
+		AC2CF75F240493EB001A14B2 /* DBHelper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DBHelper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC32CB4923F4A1F000E92696 /* TodoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoRow.swift; sourceTree = "<group>"; };
 		AC9F2D3A23E9E08600E96DD1 /* NewTodoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTodoViewModel.swift; sourceTree = "<group>"; };
 		AC9F2D3D23E9F87800E96DD1 /* NewTodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTodoView.swift; sourceTree = "<group>"; };
@@ -49,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC2CF760240493EB001A14B2 /* DBHelper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +78,7 @@
 			children = (
 				AC25973823E2016000CC57C6 /* DemoToDoList */,
 				AC25973723E2016000CC57C6 /* Products */,
+				AC2CF75E240493EB001A14B2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -133,6 +152,14 @@
 			path = Mock;
 			sourceTree = "<group>";
 		};
+		AC2CF75E240493EB001A14B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC2CF75F240493EB001A14B2 /* DBHelper.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AC41670823EC6CE700FD3393 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +187,7 @@
 				AC25973223E2016000CC57C6 /* Sources */,
 				AC25973323E2016000CC57C6 /* Frameworks */,
 				AC25973423E2016000CC57C6 /* Resources */,
+				AC2CF762240493EB001A14B2 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
